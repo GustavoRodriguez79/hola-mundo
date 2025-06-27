@@ -97,3 +97,4 @@ cd ~/practica-github/hola-mundo
 | `git add README.md`               | Agrega el archivo al área de staging                      |
 | `git commit -m "mensaje"`         | Crea un commit con un mensaje personalizado               |
 | `git push origin SPD`             | Sube los cambios a la rama remota SPD                     |
+
