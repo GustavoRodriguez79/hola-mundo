@@ -109,3 +109,19 @@ cd ~/practica-github/hola-mundo
 |`git commit -m`|Crea un commit con un mensaje personalizado | 
 |`git push origin SPD`|Subís los cambios a GitHub|
 ---
+# Comando Git Pull
+
+## ¿Qué es `git pull`?
+
+`git pull` es un comando fundamental en Git que sincroniza tu repositorio local con el remoto, combinando dos operaciones:
+
+1. **`git fetch`**: Descarga los cambios del repositorio remoto
+2. **`git merge`**: Fusiona esos cambios con tu rama local
+
+## Uso básico
+
+```bash
+git pull <remoto> <rama>
+# Ejemplo:
+git pull origin main
+
