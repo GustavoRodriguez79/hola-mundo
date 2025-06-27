@@ -97,4 +97,15 @@ cd ~/practica-github/hola-mundo
 | `git add README.md`               | Agrega el archivo al área de staging                      |
 | `git commit -m "mensaje"`         | Crea un commit con un mensaje personalizado               |
 | `git push origin SPD`             | Sube los cambios a la rama remota SPD                     |
+---
 
+## ✅ Pasos para traer los cambios de main a SPD:
+
+| Comando                            | Descripción                                                |
+|-----------------------------------|------------------------------------------------------------|
+| `git checkout SPD`                | Asegurate de estar en la rama SPD                     |
+| `git merge main`                   | Esto va a fusionar los cambios de la rama main en tu rama SPD |
+| `git add README.md` | Agregar el archivo al área de preparación (staging) |
+|`git commit -m`|Crea un commit con un mensaje personalizado | 
+|`git push origin SPD`|Subís los cambios a GitHub|
+---
