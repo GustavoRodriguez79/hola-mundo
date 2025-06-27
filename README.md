@@ -22,8 +22,34 @@ Estoy practicando comandos de Git y GitHub usando Git Bash.
 
 ---
 
-## ✅ Resultado
+## 🧹 ¿Qué hace la opción "Automatically delete head branches"?
 
-Ahora el repositorio tiene un archivo `README.md` visible en GitHub con toda la documentación.
+Cuando activás **“Automatically delete head branches”**, GitHub borra automáticamente la rama que fue usada en un **pull request (PR)** una vez que:
 
+✅ El pull request fue **completado** (mergeado) a la rama principal (por ejemplo, `main`).  
+🚫 Solo borra ramas que ya no se necesitan.  
+📦 El contenido de la rama **no se pierde**, porque ya fue fusionado.
 
+---
+
+### 📦 ¿Por qué conviene activarla?
+
+- Mantiene tu repositorio **limpio**.
+- Elimina ramas que ya no se usan y **evita confusiones**.
+- Mejora la organización cuando trabajás con **muchas ramas** (por ejemplo, en proyectos colaborativos).
+
+---
+
+### 🔁 ¿Se puede recuperar una rama borrada?
+
+✅ **Sí.** GitHub permite restaurarla desde la interfaz web si la necesitás más tarde.  
+En el historial del pull request hay un botón que dice **“Restore branch”**.
+
+---
+
+### 🧠 En resumen
+
+| Opción      | Resultado |
+|-------------|-----------|
+| ✅ Activada  | GitHub borra automáticamente la rama del PR después de hacer merge. |
+| ❌ Desactivada | Tenés que borrar manualmente las ramas después del merge. |
