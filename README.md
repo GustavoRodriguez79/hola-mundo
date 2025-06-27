@@ -24,6 +24,6 @@ Estoy practicando comandos de Git y GitHub usando Git Bash.
 
 ## ✅ Resultado
 
-Ahora tu repositorio tiene un archivo `README.md` visible en GitHub con toda la documentación.
+Ahora el repositorio tiene un archivo `README.md` visible en GitHub con toda la documentación.
 
 
