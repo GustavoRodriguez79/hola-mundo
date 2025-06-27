@@ -53,3 +53,47 @@ En el historial del pull request hay un botón que dice **“Restore branch”**
 |-------------|-----------|
 | ✅ Activada  | GitHub borra automáticamente la rama del PR después de hacer merge. |
 | ❌ Desactivada | Tenés que borrar manualmente las ramas después del merge. |
+
+---
+
+# 📘 Guía para trabajar con ramas creadas desde GitHub en Git Bash
+
+Este documento explica cómo sincronizar una rama que fue creada directamente en GitHub y cómo trabajar con ella localmente desde Git Bash.
+
+---
+
+## 🌿 ¿Qué es una rama?
+
+Una rama (branch) es una línea de trabajo paralela dentro de tu proyecto. Permite desarrollar nuevas funcionalidades o hacer pruebas sin afectar el código principal (`main`).
+
+---
+
+## 🛠️ Procedimiento completo
+
+### 1️⃣ Crear la rama en GitHub (por la web)
+
+- Ingresá a tu repositorio en GitHub.
+- Hacé clic en el menú desplegable de ramas (donde dice `main`) y escribí el nombre de la nueva rama (por ejemplo: `SPD`).
+- Presioná Enter para crearla.
+
+> 📌 Esto solo crea la rama en GitHub (repositorio remoto), **no está disponible localmente aún**.
+
+---
+
+### 2️⃣ Abrir Git Bash en tu repositorio local
+
+Asegurate de estar en la carpeta correcta, por ejemplo:
+```bash
+cd ~/practica-github/hola-mundo
+```
+### 3️⃣ 🧠 Resumen de comandos
+
+| Comando                            | Descripción                                                |
+|-----------------------------------|------------------------------------------------------------|
+| `git fetch origin`                | Trae las ramas del repositorio remoto                     |
+| `git branch -a`                   | Lista ramas locales y remotas                             |
+| `git checkout -b SPD origin/SPD`  | Crea una nueva rama local basada en la remota SPD         |
+| `git branch`                      | Muestra en qué rama estás                                 |
+| `git add README.md`               | Agrega el archivo al área de staging                      |
+| `git commit -m "mensaje"`         | Crea un commit con un mensaje personalizado               |
+| `git push origin SPD`             | Sube los cambios a la rama remota SPD                     |
